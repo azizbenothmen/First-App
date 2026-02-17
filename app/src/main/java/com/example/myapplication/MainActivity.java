@@ -47,4 +47,12 @@ public class MainActivity extends AppCompatActivity {
             Log.d("Tag",msg);
         }
     }
+
+    public void newFon(View view) {
+        --mCount;
+        if(mshowCount!=null){
+            mshowCount.setText(Integer.toString(mCount));
+            Log.d("Tag",msg);
+        }
+    }
 }
