@@ -55,4 +55,13 @@ public class MainActivity extends AppCompatActivity {
             Log.d("Tag",msg);
         }
     }
+
+    public void ToZero(View view) {
+        mCount=0;
+        if(mshowCount!=null){
+            mshowCount.setText(Integer.toString(mCount));
+            Log.d("Tag",msg);
+        }
+
+    }
 }

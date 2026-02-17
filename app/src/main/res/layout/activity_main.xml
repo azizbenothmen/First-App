@@ -22,16 +22,18 @@
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="302dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="182dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#3F51B5"
+        android:onClick="showToast"
         android:text="@string/button_label_count"
+        app:layout_constraintBottom_toTopOf="@+id/showcount"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="showToast"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/showcount"
@@ -53,8 +55,7 @@
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_toast"
-        app:layout_constraintVertical_bias="0.0"
-        />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button7"
@@ -72,5 +73,24 @@
         app:layout_constraintTop_toBottomOf="@+id/showcount"
         app:layout_constraintVertical_bias="0.0"
         android:onClick="newFon"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="177dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/showcount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/button_toast"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="ToZero"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
